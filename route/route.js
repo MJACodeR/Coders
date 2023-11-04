@@ -1,16 +1,16 @@
 const express = require('express');
 const router = express.Router();
 
-const {createUser,getUser,updateUser,deleteUser,createServiceUser,getServiceUser,updateServiceUser,deleteServiceUser} = require('../controller/controller')
+const {createUser,GetUser,UpdateUser,deleteUser,createServiceUser,getServiceUser,updateServiceUser,deleteServiceUser} = require('../controller/controller')
 
 //POST category
 router.post("/category",createUser)
 
 //GET/categories
-router.get("/categories",getUser)
+router.get("/categories",GetUser)
 
 //PUT /category/:categoryId
-router.put("/category/:categoryId",updateUser)
+router.put("/category/:categoryId",UpdateUser)
 
 // DELETE /category/:categoryId
 router.delete("/category/:categoryId",deleteUser)
